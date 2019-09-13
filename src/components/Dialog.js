@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+import OutlinedTextField from './TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -27,15 +27,7 @@ function FormDialog({open, handleClose, classes}) {
             To subscribe to this website, please enter your email address here. We will send updates
             occasionally.
           </DialogContentText>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            type="email"
-            variant='outlined'
-            inputProps={{ 'aria-label': 'bare' }}
-            fullWidth
-          />
+          <OutlinedTextField />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
