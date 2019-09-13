@@ -31,8 +31,9 @@ function FormDialog({open, handleClose, classes}) {
             autoFocus
             margin="dense"
             id="name"
-            label="Email Address"
             type="email"
+            variant='outlined'
+            inputProps={{ 'aria-label': 'bare' }}
             fullWidth
           />
         </DialogContent>
